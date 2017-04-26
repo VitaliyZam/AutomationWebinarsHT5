@@ -6,6 +6,7 @@
         <parameter name="selenium.browserFF" value="firefox" />
         <parameter name="selenium.browserIE" value="ie" />
         <parameter name="selenium.browserPJS" value="phantomjs" />
+        <parameter name="selenium.android" value="android" />
         <parameter name="selenium.grid" value="http://localhost:4444/wd/hub" />
         <classes>
             <class name="HomeTask5.tests.PlaceOrderTest" />
