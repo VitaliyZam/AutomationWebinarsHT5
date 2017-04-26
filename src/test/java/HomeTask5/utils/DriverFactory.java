@@ -59,6 +59,9 @@ public class DriverFactory {
         DesiredCapabilities capabilities;
         try {
             switch (browser) {
+                case "android":
+                capabilities = DesiredCapabilities.android();
+                return new RemoteWebDriver(new URL(gridUrl), capabilities);
                 case "firefox":
                     capabilities = DesiredCapabilities.firefox();
                     return new RemoteWebDriver(new URL(gridUrl), capabilities);
